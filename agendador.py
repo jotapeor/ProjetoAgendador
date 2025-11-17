@@ -2,7 +2,6 @@ import streamlit as st
 from datetime import datetime
 import json
 
-
 def carregar_dados():
     try:
         with open('compromisso.json', 'r') as arquivo:
@@ -90,5 +89,3 @@ with tab3:
                 st.success(f"Compromisso '{nome_cancelar}' editado!")
             else:
                 st.error("Compromisso não encontrado.")
-
-# Upando para o GitHub
